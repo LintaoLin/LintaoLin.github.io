@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-08T05:56:05.000Z</updated>
+  <updated>2017-03-08T06:51:20.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Android使用LinearLayoutManager的findFirstCompletelyVisibleItemPosition和findLastCompletelyVisibleItemPosition判断下拉刷新上拉加载问题</title>
+    <title>Android使用LayoutManager的findFirstCompletelyVisibleItemPosition和findLastCompletelyVisibleItemPosition判断下拉刷新上拉加载问题</title>
     <link href="http://yoursite.com/2017/03/08/Android%E4%BD%BF%E7%94%A8LinearLayoutManager%E7%9A%84findFirstCompletelyVisibleItemPosition%E5%92%8CfindLastCompletelyVisibleItemPosition%E5%88%A4%E6%96%AD%E4%B8%8B%E6%8B%89%E5%88%B7%E6%96%B0%E4%B8%8A%E6%8B%89%E5%8A%A0%E8%BD%BD%E9%97%AE%E9%A2%98/"/>
     <id>http://yoursite.com/2017/03/08/Android使用LinearLayoutManager的findFirstCompletelyVisibleItemPosition和findLastCompletelyVisibleItemPosition判断下拉刷新上拉加载问题/</id>
     <published>2017-03-07T16:48:39.000Z</published>
-    <updated>2017-03-08T05:56:05.000Z</updated>
+    <updated>2017-03-08T06:51:20.000Z</updated>
     
     <content type="html"><![CDATA[<p>Android现在的上拉刷新、下拉加载很多都是使用<code>SwipeRefreshLayout</code>和<code>RecyclerView</code>，监听滑动实现的，在监听滑动时通过标题的两个方法判断是否滑动到底以及是否滑动到头，关于这个网上博客很多，就不介绍了。</p>
 <p>一般情况下确实是没有问题的，但是如果你的<strong><em>第一个Item/最后一个Item</em></strong>的<code>View</code>大小超过屏幕大小，你就会发现<strong><em>下拉刷新/上拉加载</em></strong>失去作用。那这是什么问题呢？</p>
